@@ -7,27 +7,43 @@
 .jumbotron-vh
   height: 100vh
   // @media screen and (max-height: 690px)
-  //   height: auto
+    // height: auto
 
 .jumbotron-light
 
   h1
     font-family: $font-family-raleway
     color: $color-text
-    font-size: 2.25rem
-    margin-top: 10rem
+    font-size: 1.75rem
+    margin-top: 2.5rem
+    @media #{$iphone-4-landscape}
+      margin-top: 1rem
+    @media #{$iphone-4-landscape}
+      margin-top: .5rem
 
   p
     color: $color-text-lead
     font-family: $font-family-open-sans
-    font-size: 1.2rem
+    font-size: .75rem
     font-weight: 400
-    margin-top: 3.5rem
+    margin-top: 2rem
+    @media #{$iphone-4-portrait}
+      margin-top: 1rem
+    @media #{$iphone-4-landscape}
+      margin-top: 0rem
+
+    +media-breakpoint-up(sm)
+      margin-top: 3.5rem
     &.lead
-      margin-bottom: 6rem
+      @media #{$iphone-4-portrait}
+        margin-bottom: 1rem
+      @media #{$iphone-4-landscape}
+        margin-bottom: .5rem
 
   .icon-btn
     color: $color-text-icon-btn
+
+
 
     &:hover
       text-decoration: none
@@ -35,24 +51,67 @@
       p
         font-size: .6rem
         margin-top: .75rem
+        margin-bottom: .5rem
+        @media #{$iphone-4-portrait}
+          margin-bottom: .5rem
+        @media #{$iphone-4-landscape}
+          margin-bottom: .25rem
+      img
+        max-width: 100%
+        width: 100%
+        height: auto !important
+        @media #{$iphone-4-portrait-landscape}
+          max-width: 35px
+          max-height: 35px
+
     &.icon-btn-small
       p
         font-size: .5rem
         margin-top: .25rem
         padding: 0 2rem 0 2rem
+        @media #{$iphone-4-portrait}
+          margin-bottom: .4rem
+        @media #{$iphone-4-landscape}
+          margin-bottom: .25rem
 
-.absolute-wrapper
-  position: absolute
-  width: 100%
-  bottom: 0
+      img
+        max-width: 100%
+        width: 100%
+        height: auto !important
+        @media #{$iphone-4-portrait-landscape}
+          max-width: 27px
+          max-height: 27px
+
 
 .jumbotron-primary
+  .contact-container
+    // +media-breakpoint-up(md)
+    @media #{$iphone-4-landscape}
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      margin-left: auto
+      margin-right: auto
+    @media #{$iphone-5-portrait}
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      margin-left: auto
+      margin-right: auto
+
   .contact
     p
       color: $color-text
       font-size: .8rem
       margin-top: 0
       margin-bottom: 1rem
+      @media #{$iphone-4-portrait-landscape}
+        font-size: .65rem
+        margin-bottom: .25rem
       &.email
         font-weight: $font-weight-semi-bold
         margin-bottom: 1.5rem
+        @media #{$iphone-4-portrait-landscape}
+          margin-bottom: .5rem
