@@ -24,9 +24,13 @@
     margin-right: auto
     opacity: .05
     @media #{$iphone-4-landscape}
-      font-size: 3rem
+      // font-size: 3rem
       // top: 6.5rem -> actual proportion from design
-      top: 3.85rem
+      top: 4.2rem
+    @media #{$iphone-5-portrait}
+      top: 12.7rem
+    @media #{$iphone-5-landscape}
+      top: 4.12rem
 
   h2
     font-family: $font-family-raleway
@@ -37,6 +41,12 @@
     @media #{$iphone-4-landscape}
       // margin-top: 5.65rem -> actual proportion from design
       margin-top: 3rem
+    @media #{$iphone-5-portrait}
+      font-size: 1.183rem
+      margin-top: 11.41rem
+    @media #{$iphone-5-landscape}
+      // font-size: 1.183rem
+      margin-top: 1rem
 
   p
     color: $color-text-lead
@@ -44,11 +54,23 @@
     font-size: .564rem
     font-weight: 400
     &.lead
-      margin-top: 2rem
       margin-bottom: 2.8rem
+      margin-top: 2rem
       @media #{$iphone-4-landscape}
-        margin-top: 1.328rem
         margin-bottom: 1.86rem
+        margin-top: 1.328rem
+        width: 20.6rem
+      @media #{$iphone-5-portrait}
+        font-size: .676rem
+        margin-bottom: 3.353rem
+        margin-top: 2.39rem
+      @media #{$iphone-5-landscape}
+        // font-size: .676rem
+        width: 20.6rem
+        margin-bottom: 1.86rem
+        margin-top: 1.328rem
+
+
 
   .icon-btn
     color: $color-text-icon-btn
@@ -59,12 +81,19 @@
       p
         font-size: .28rem
         margin-top: .3529rem
+        @media #{$iphone-5-portrait}
+          font-size: .338rem
+          margin-top: .423rem
       img
         max-width: 100%
         width: 100%
         height: auto !important
-        max-width: 21.5px
         max-height: 21.5px
+        max-width: 21.5px
+        @media #{$iphone-5-portrait}
+          max-height: 25.7px
+          max-width: 25.7px
+
 
     &.icon-btn-small
       p
@@ -72,6 +101,9 @@
         margin-top: .225rem
         padding: 0 .38rem 0 .38rem
         margin-bottom: 0
+        @media #{$iphone-5-portrait}
+          font-size: .28rem
+          padding: 0 .46rem 0 .46rem
 
       img
         max-width: 100%
@@ -79,6 +111,9 @@
         height: auto !important
         max-width: 14px
         max-height: 14px
+        @media #{$iphone-5-portrait}
+          max-width: 16.7px
+          max-height: 16.7px
 
 .jumbotron-primary
   .contact-container
@@ -88,16 +123,24 @@
     bottom: 0.65625rem
     margin-left: auto
     margin-right: auto
+    @media #{$iphone-5-portrait}
+      bottom: .786rem
 
   .contact
     p
       color: $color-text
       font-size: .376rem
       margin-top: 0
-      // margin-bottom: .73rem
-      margin-bottom: .484rem
+      margin-bottom: .73rem
+      // margin-bottom: .484rem
       @media #{$iphone-4-landscape}
-        margin-bottom: .484rem
+        // margin-bottom: .484rem
+      @media #{$iphone-5-portrait}
+        margin-bottom: .87rem
+        font-size: .45rem
       &.email
         font-weight: $font-weight-semi-bold
-        margin-bottom: .25rem
+        // margin-bottom: .25rem
+        margin-bottom: .53rem
+        @media #{$iphone-5-portrait}
+          margin-bottom: .64rem
