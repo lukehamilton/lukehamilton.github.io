@@ -38,10 +38,13 @@
     @media #{$iphone-6-landscape}
       // 2.5 rem (base / iphone 4 landscape font size) * 1.17 (ratio of iphone 6 height to iphone 4/5 height ~ 375 / 320)
       font-size: 2.925rem
-      top: 4rem
+      top: 4.2rem
     @media #{$iphone-6-plus-portrait}
       font-size: 3.2rem
       top: 16.65rem
+    @media #{$iphone-6-plus-landscape}
+      font-size: 3.25rem
+      top: 4.2rem
 
 
   h2
@@ -64,12 +67,14 @@
       margin-top: 14rem
     @media #{$iphone-6-landscape}
       font-size: 1.17rem
-      margin-top: 1rem
+      margin-top: 1.17rem
     @media #{$iphone-6-plus-portrait}
       font-size: 1.54rem
       // margin-top: 16.74rem -> actual proportion from design
       margin-top: 15.59rem
-
+    @media #{$iphone-6-plus-landscape}
+      font-size: 1.3rem
+      margin-top: 1.3rem
 
   p
     color: $color-text-lead
@@ -98,12 +103,17 @@
       @media #{$iphone-6-landscape}
         font-size: .66rem
         width: 20.6rem
-        margin-bottom: 2.21rem
-        margin-top: 1.58rem
+        margin-bottom: 2.18rem
+        margin-top: 1.55rem
       @media #{$iphone-6-plus-portrait}
         font-size: .88rem
         margin-bottom: 4.35rem
         margin-top: 3.1rem
+      @media #{$iphone-6-plus-landscape}
+        font-size: .73rem
+        width: 20.6rem
+        margin-bottom: 2.4rem
+        margin-top: 1.73rem
 
   .icon-btn
     color: $color-text-icon-btn
@@ -126,6 +136,9 @@
         @media #{$iphone-6-plus-portrait}
           font-size: .44rem
           margin-top: .55rem
+        @media #{$iphone-6-plus-landscape}
+          font-size: .364rem
+          margin-top: .46rem
 
       img
         max-width: 100%
@@ -146,6 +159,9 @@
         @media #{$iphone-6-plus-portrait}
           max-height: 33.3px
           max-width: 33.3px
+        @media #{$iphone-6-plus-landscape}
+          max-height: 28px
+          max-width: 28px
 
     &.icon-btn-small
       p
@@ -168,6 +184,10 @@
         @media #{$iphone-6-plus-portrait}
           margin-top: .35rem
           font-size: .37rem
+        @media #{$iphone-6-plus-landscape}
+          font-size: .3rem
+          margin-top: .29rem
+          padding: 0 .5rem 0 .5rem
 
       img
         max-width: 100%
@@ -187,6 +207,9 @@
         @media #{$iphone-6-plus-portrait}
           max-width: 21.64px
           max-height: 21.64px
+        @media #{$iphone-6-plus-landscape}
+          max-width: 18.2px
+          max-height: 18.2px
 
 .jumbotron-primary
   .contact-container
@@ -204,6 +227,8 @@
       bottom: .768rem
     @media #{$iphone-6-plus-portrait}
       bottom: 1rem
+    @media #{$iphone-6-plus-landscape}
+      bottom: .85rem
 
   .contact
     p
@@ -226,6 +251,9 @@
       @media #{$iphone-6-plus-portrait}
         margin-bottom: 1.13rem
         font-size: .58rem
+      @media #{$iphone-6-plus-landscape}
+        margin-bottom: .95rem
+        font-size: .5rem
 
       &.email
         font-weight: $font-weight-semi-bold
@@ -239,3 +267,5 @@
           margin-bottom: .62rem
         @media #{$iphone-6-plus-portrait}
           margin-bottom: .83rem
+        @media #{$iphone-6-plus-landscape}
+          margin-bottom: .69rem
