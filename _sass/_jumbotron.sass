@@ -6,6 +6,8 @@
   background-size: cover
 .jumbotron-vh
   height: 100vh
+  @media (min-width: 48em) and (max-height: 1023px)
+    height: auto
   // @media screen and (max-height: 690px)
     // height: auto
 
@@ -45,7 +47,12 @@
     @media #{$iphone-6-plus-landscape}
       font-size: 3.25rem
       top: 4.2rem
-
+    @include media-breakpoint-up(md)
+      font-size: 5rem
+      top: -25px
+    @include media-breakpoint-up(lg)
+      font-size: 6rem
+      top: -30px
 
   h2
     font-family: $font-family-raleway
@@ -75,6 +82,17 @@
     @media #{$iphone-6-plus-landscape}
       font-size: 1.3rem
       margin-top: 1.3rem
+    // min width: 544px +
+    @include media-breakpoint-up(sm)
+    // min width: 768px +
+    @include media-breakpoint-up(md)
+      font-size: 2.13rem
+      // margin-top: 21.6rem
+      margin-top: 33.75vh
+    // min width: 992px +
+    @include media-breakpoint-up(lg)
+      font-size: 2.625rem
+      margin-top: 33.75vh
 
   p
     color: $color-text-lead
@@ -114,6 +132,15 @@
         width: 20.6rem
         margin-bottom: 2.4rem
         margin-top: 1.73rem
+      @include media-breakpoint-up(md)
+        font-size: 1.2rem
+        margin-bottom: 6rem
+        margin-top: 4.3rem
+        height: 7rem
+      @include media-breakpoint-up(lg)
+        font-size: 1.5rem
+        margin-bottom: 7.4rem
+        margin-top: 5.3rem
 
   .icon-btn
     color: $color-text-icon-btn
@@ -139,6 +166,12 @@
         @media #{$iphone-6-plus-landscape}
           font-size: .364rem
           margin-top: .46rem
+        @include media-breakpoint-up(md)
+          font-size: .6rem
+          margin-top: .76rem
+        @include media-breakpoint-up(lg)
+          font-size: .75rem
+          margin-top: .9375rem
 
       img
         max-width: 100%
@@ -162,6 +195,12 @@
         @media #{$iphone-6-plus-landscape}
           max-height: 28px
           max-width: 28px
+        @include media-breakpoint-up(md)
+          max-height: 46px
+          max-width: 46px
+        @include media-breakpoint-up(lg)
+          max-height: 57px
+          max-width: 57px
 
     &.icon-btn-small
       p
@@ -188,6 +227,15 @@
           font-size: .3rem
           margin-top: .29rem
           padding: 0 .5rem 0 .5rem
+        @include media-breakpoint-up(md)
+          font-size: .5rem
+          margin-top: .5rem
+          padding: 0 .82rem 0 .82rem
+        @include media-breakpoint-up(lg)
+          font-size: .625rem
+          margin-top: .6rem
+          padding: 0 1rem 0 1rem
+
 
       img
         max-width: 100%
@@ -210,6 +258,12 @@
         @media #{$iphone-6-plus-landscape}
           max-width: 18.2px
           max-height: 18.2px
+        @include media-breakpoint-up(md)
+          max-width: 30px
+          max-height: 30px
+        @include media-breakpoint-up(lg)
+          max-width: 37px
+          max-height: 37px
 
 .jumbotron-primary
   .contact-container
@@ -229,6 +283,18 @@
       bottom: 1rem
     @media #{$iphone-6-plus-landscape}
       bottom: .85rem
+    @include media-breakpoint-up(md)
+      bottom: 1.4rem
+    @media (min-width: 48em) and (max-height: 1023px)
+      position: relative
+      margin-top: 5.3125rem
+      margin-bottom: -4rem
+    @include media-breakpoint-up(lg)
+      bottom: 1.75rem
+    // same as media-breakpoint-up(lg)
+    // @media (min-width: 62em) and (max-height: 1024px)
+      position: static
+
 
   .contact
     p
@@ -254,6 +320,12 @@
       @media #{$iphone-6-plus-landscape}
         margin-bottom: .95rem
         font-size: .5rem
+      @include media-breakpoint-up(md)
+        margin-bottom: 1.6rem
+        font-size: .8rem
+      @include media-breakpoint-up(lg)
+        margin-bottom: 1.9375rem
+        font-size: 1rem
 
       &.email
         font-weight: $font-weight-semi-bold
@@ -269,3 +341,7 @@
           margin-bottom: .83rem
         @media #{$iphone-6-plus-landscape}
           margin-bottom: .69rem
+        @include media-breakpoint-up(md)
+          margin-bottom: 1.15rem
+        @include media-breakpoint-up(lg)
+          margin-bottom: 1.4rem

@@ -1,0 +1,125 @@
+.experience
+  h3
+    color: $color-text
+    font-family: $font-family-raleway
+    font-size: 26px
+    font-weight: $font-weight-light
+    // 170 / (303/200)
+    margin-top: 112px
+    // 112 / (303/200)
+    margin-bottom: 74px
+    @include media-breakpoint-up(sm)
+      // 170 / (303/230)
+      margin-top: 128px
+      // 112 / (303/230)
+      margin-bottom: 84px
+    @include media-breakpoint-up(md)
+      // 170 / (303/200)
+      margin-top: 112px
+      // 112 / (303/200)
+      margin-bottom: 74px
+    @include media-breakpoint-up(lg)
+      // 170 / (303/250)
+      margin-top: 140px
+      // 112 / (303/250)
+      margin-bottom: 92px
+    @include media-breakpoint-up(xl)
+      margin-top: 170px
+      margin-bottom: 112px
+
+  .circle
+    border: 1px solid $red-ribbon
+    border-radius: 50%
+    margin: 0 auto
+    // 200px * 200px
+    height: 12.5rem
+    width: 12.5rem
+    margin-bottom: 2.5rem
+    position: relative
+    // display: flex
+    // align-items: center
+    // justify-content: center
+    // screen width: 992px
+    @include media-breakpoint-up(sm)
+      // 230px * 230px
+      height: 14.375rem
+      width: 14.375rem
+      margin-bottom: 3.625rem
+    @include media-breakpoint-up(md)
+      // 200px * 200px
+      height: 12.5rem
+      width: 12.5rem
+      margin-bottom: 2.5rem
+    @include media-breakpoint-up(lg)
+      // 250px * 250px
+      height: 15.625rem
+      width: 15.625rem
+      margin-bottom: 3.9375rem
+    @include media-breakpoint-up(xl)
+      // 303px * 303px
+      height: 18.9375rem
+      width: 18.9375rem
+      margin-bottom: 4.8125rem
+    &:hover
+      // margin-top: 10px
+      border-width: .625rem
+      box-shadow: 0px 5px 9px 3px rgba(169,169,169,0.50), 2px 2px 3px 4px rgba(235,235,235,0.50)
+      cursor: pointer
+
+    // p
+    //   display: block
+    //   @include media-breakpoint-up(xs)
+    //     top: 136px
+    //   @include media-breakpoint-up(sm)
+    //     top: 158px
+    //   @include media-breakpoint-up(md)
+    //     top: 136px
+    //   @include media-breakpoint-up(lg)
+    //     top: 173px
+    //   @include media-breakpoint-up(xl)
+    //     top: 211px
+
+  img
+    position: absolute
+    margin: auto
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    transform: scale(.66)
+    @include media-breakpoint-up(sm)
+      transform: scale(.76)
+    @include media-breakpoint-up(md)
+      transform: scale(.66)
+    @include media-breakpoint-up(lg)
+      transform: scale(.83)
+    @include media-breakpoint-up(xl)
+      transform: scale(1)
+
+
+  p
+    font-family: $font-family-open-sans
+    font-weight: $font-weight-regular
+    position: absolute
+    margin: auto
+    left: 0
+    right: 0
+    bottom: 0
+    @include media-breakpoint-up(xs)
+      font-size: 10px
+      // top: 145px
+      top: 0
+    @include media-breakpoint-up(sm)
+      font-size: 12px
+      top: 167px
+    @include media-breakpoint-up(md)
+      font-size: 10px
+      top: 145px
+    @include media-breakpoint-up(lg)
+      font-size: 13px
+      top: 182px
+    @include media-breakpoint-up(xl)
+      top: 220px
+      font-size: 16px
+
+      // margin-top: 220px
