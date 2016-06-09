@@ -4,28 +4,47 @@
     font-family: $font-family-raleway
     font-size: 26px
     font-weight: $font-weight-light
-    // 170 / (303/200)
-    margin-top: 112px
-    // 112 / (303/200)
-    margin-bottom: 74px
+    @include media-breakpoint-up(xs)
+      font-size: 17px
+      // 170 / (303/200)
+      margin-top: 112px
+      // 112 / (303/200)
+      margin-bottom: 74px
     @include media-breakpoint-up(sm)
+      font-size: 20px
       // 170 / (303/230)
       margin-top: 128px
       // 112 / (303/230)
       margin-bottom: 84px
     @include media-breakpoint-up(md)
+      font-size: 17px
       // 170 / (303/200)
       margin-top: 112px
       // 112 / (303/200)
       margin-bottom: 74px
     @include media-breakpoint-up(lg)
+      font-size: 22px
       // 170 / (303/250)
       margin-top: 140px
       // 112 / (303/250)
       margin-bottom: 92px
     @include media-breakpoint-up(xl)
+      font-size: 26px
       margin-top: 170px
       margin-bottom: 112px
+
+  .circle-wrap:last-child
+    margin-bottom: 207px
+    @include media-breakpoint-up(xs)
+      margin-bottom: 137px
+    @include media-breakpoint-up(sm)
+      margin-bottom: 157px
+    @include media-breakpoint-up(md)
+      margin-bottom: 137px
+    @include media-breakpoint-up(lg)
+      margin-bottom: 171px
+    @include media-breakpoint-up(xl)
+      margin-bottom: 207px
 
   .circle-wrap
     @include media-breakpoint-up(xs)
