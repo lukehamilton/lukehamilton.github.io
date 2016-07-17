@@ -1,0 +1,109 @@
+.jumbotron
+  position: relative
+  margin-bottom: 0
+  border-radius: 0
+.jumbotron-image
+  background-image: url("/images/backgrounds/jumbotron_mountain_bg.png")
+  background-size: cover
+// .jumbotron-vh
+  height: 100vh
+  @media (min-width: 48em) and (max-height: 1023px)
+    height: auto
+
+.splash
+  color: $color-text
+
+  h1
+    color: $color-text-background-header
+    font-family: $font-family-raleway
+    font-weight: $font-weight-bold
+    position: absolute
+    left: 0
+    right: 0
+    opacity: .05
+    @include media-breakpoint-down(xs)
+      font-size: 40px
+      top: 130px
+    @include media-breakpoint-up(xs)
+      font-size: 69px
+      top: 250px
+    @include media-breakpoint-up(md)
+      font-size: 96px
+      top: 334px
+    @include media-breakpoint-up(lg)
+      font-size: 125px
+      top: 444px
+    @include media-breakpoint-up(xl)
+      font-size: 145px
+      top: 435px
+
+  h2
+    font-family: $font-family-raleway
+    font-weight: $font-weight-medium
+    // font-size: 42px
+    // 490 - 64 (jumbotron padding)
+    margin-top: 426px
+    @include media-breakpoint-down(xs)
+      // 490 - 32 (jumbotron padding)
+      // margin-top: 458px
+      font-size: 37px
+      margin-top: 100px
+    @include media-breakpoint-up(xs)
+      font-size: 42px
+      margin-top: 200px
+    @include media-breakpoint-up(md)
+      margin-top: 300px
+    @include media-breakpoint-up(lg)
+      margin-top: 426px
+
+  p.lead
+    color: $color-text-lead
+    font-family: $font-family-open-sans
+    font-weight: $font-weight-regular
+    font-size: 24px
+    line-height: 35px
+    margin-top: 86px
+
+  .download-resume
+    margin-top: 154px
+
+    a
+      text-decoration: none
+
+    p
+      color: $color-text-icon-btn
+      font-family: $font-family-open-sans
+      font-weight: $font-weight-semi-bold
+      margin-top: 22px
+
+  .phone-number
+    margin-top: 119px
+    font-family: $font-family-open-sans
+    font-weight: $font-weight-regular
+    font-size: 16px
+
+  .email-address
+    font-family: $font-family-open-sans
+    font-weight: $font-weight-bold
+    font-size: 16px
+    margin-top: 32px
+
+  .social-links
+    margin-top: 42px
+    // 37 - 64 (jumbotron padding)
+    margin-bottom: -27px
+    @include media-breakpoint-down(xs)
+      // 37 - 32 (jumbotron padding)
+      margin-bottom: 5px
+
+  .social-link
+    padding: 0 39px 0 39px
+    text-decoration: none
+
+    p
+      font-family: $font-family-open-sans
+      font-weight: $font-weight-semi-bold
+      font-size: 10px
+      color: $color-text-icon-btn
+      margin-bottom: 0
+      margin-top: 12px
