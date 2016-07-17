@@ -1,0 +1,82 @@
+.skills
+  background-color: $color-background-invert
+  color: $color-text-secondary
+  position: relative
+
+  &.jumbotron
+
+
+
+  .icon-badge
+    margin-bottom: 104px
+    // 100 - 64 (jumbotron padding)
+    margin-top: 36px
+    @include media-breakpoint-down(xs)
+      // 100 - 32 (jumbotron padding)
+      margin-top: 68px
+    img
+
+    h3
+      color: $color-text-icon-badge-inverse
+      // font-family: $font-family-lucida-grande
+      font-family: $font-family-raleway
+      font-size: 26px
+      // font-weight: $font-weight-regular
+      font-weight: $font-weight-medium
+      // font-weight: $font-weight-light
+      // margin-top: 18px
+      margin-top: 22px
+
+  .skill-group
+    h4
+      border-bottom: 1px solid $white
+      display: flex
+      align-items: center
+      font-family: $font-family-raleway
+      font-size: 20px
+      font-weight: $font-weight-medium
+      // font-weight: $font-weight-regular
+      // font-weight: $font-weight-light
+      height: 50px
+      width: 175px
+      // margin-bottom: 30px
+    ul
+      font-family: $font-family-open-sans
+      font-size: 18px
+      font-weight: $font-weight-regular
+      list-style-type: none
+      margin-top: 30px
+      padding: 0
+      li
+        margin-top: 20px
+
+
+  .skill-group:last-child
+    // 150 - 64 (jumbotron padding)
+    margin-bottom: 86px
+    @include media-breakpoint-down(xs)
+      // 150 - 32 (jumbotron padding)
+      margin-bottom: 118px
+
+  // General
+  .skill-group:nth-child(1)
+    h4
+      width: 175px
+
+  // Programming Languages
+  .skill-group:nth-child(2)
+    h4
+      width: 175px
+
+  // Web Tech
+  .skill-group:nth-child(3)
+    h4
+      width: 175px
+
+  // Frameworks
+  .skill-group:nth-child(4)
+    @include media-breakpoint-up(lg)
+      // margin-bottom: 80px
+      margin-bottom: 50px
+    h4
+      width: 175px

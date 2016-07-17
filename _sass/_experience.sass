@@ -1,0 +1,74 @@
+.experience
+  background-color: $color-background
+  h3
+    color: $color-text
+    font-family: $font-family-raleway
+    font-size: 26px
+    font-weight: $font-weight-light
+    margin-bottom: 112px
+    // 167 - 64 (jumbotron padding)
+    margin-top: 103px
+    @include media-breakpoint-down(xs)
+      // 167 - 32 (jumbotron padding)
+      margin-top: 135px
+
+  .circle-wrap:last-child
+    // 208 - 64 (jumbotron padding)
+    margin-bottom: 144px
+    @include media-breakpoint-down(xs)
+      // 208 - 32 (jumbotron padding)
+      margin-bottom: 176px
+
+  .circle-wrap
+    margin-bottom: 73px
+    // width: 368px
+
+  .circle
+    border: 1px solid $color-circle
+    border-radius: 50%
+    margin: 0 auto
+    position: relative
+    height: 303px
+    width: 303px
+    &:hover
+      border-width: .625rem
+      box-shadow: 0px 5px 9px 3px rgba(169,169,169,0.50), 2px 2px 3px 4px rgba(235,235,235,0.50)
+      cursor: pointer
+
+  img
+    position: absolute
+    margin: auto
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
+  p
+    color: $color-text
+    font-family: $font-family-open-sans
+    font-weight: $font-weight-regular
+    position: absolute
+    margin: auto
+    left: 0
+    right: 0
+    bottom: 0
+    top: 220px
+    font-size: 16px
+    // @include media-breakpoint-up(xs)
+    //   font-size: 10px
+    //   top: 145px
+    // @include media-breakpoint-up(sm)
+    //   font-size: 12px
+    //   top: 167px
+    // @include media-breakpoint-up(md)
+    //   font-size: 10px
+    //   // font-size: 12px
+    //   top: 145px
+    // @include media-breakpoint-up(lg)
+    //   font-size: 13px
+    //   top: 182px
+    // @include media-breakpoint-up(xl)
+    //   top: 220px
+    //   font-size: 16px
+
+      // margin-top: 220px

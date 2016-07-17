@@ -1,0 +1,52 @@
+.projects
+  background-color: $color-background-invert
+  color: $color-text-secondary
+
+  .icon-badge
+    // 78 - 64 (jumbotron padding)
+    margin-top: 14px
+    margin-bottom: 90px
+
+    h3
+      color: $color-text-icon-badge-inverse
+      font-size: 26px
+      font-family: $font-family-raleway
+      font-weight: $font-weight-medium
+      margin-top: 22px
+
+  .project
+    position: relative
+    margin-bottom: 50px
+
+    .circle
+      border: 1px solid $color-circle-inverse
+      border-radius: 50%
+      display: inline-block
+      // height: 71px
+      // width: 71px
+      height: 75px
+      width: 75px
+
+    .project-title
+      display: inline-block
+      font-family: $font-family-raleway
+      font-size: 20px
+      font-weight: $font-weight-medium
+      position: absolute
+      // 71 (circle width) + 20 (offset) + 15 (parent padding) = 106
+      left: 106px
+
+    .project-description
+      display: inline-block
+      font-family: $font-family-open-sans
+      font-size: 16px
+      font-weight: $font-weight-regular
+      position: absolute
+      // 71 (circle width) + 20 (offset) + 15 (parent padding) = 106
+      left: 106px
+      top: 30px
+      width: 275px
+
+  .project:last-child
+    // 212 - 64 (jumbotron padding)
+    margin-bottom: 148px
