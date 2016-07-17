@@ -1,4 +1,6 @@
-<section class='container experience'>
+<div id='experience'></div>
+
+<section class='jumbotron container experience'>
 
   <div class='row'>
     <h3 class='text-center'>WORK EXPERIENCE</h3>
@@ -7,7 +9,7 @@
   <div class='row'>
 
     {% for employer in site.data.employers %}
-      <div class='circle-wrap col-xs-12 col-sm-6 col-md-4'>
+      <div class='circle-wrap col-xs-12 col-md-6 col-xl-4'>
         <img src="/images/logos/logo-{{ employer.slug }}.png" data-at2x="/images/logos/logo-{{ employer.slug }}@2x.png"/>
         <p class="text-center">{{ employer.period }}</p>
         <div class='circle'></div>

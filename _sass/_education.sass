@@ -6,6 +6,9 @@
     margin-bottom: 28px
     // 122 - 64 (jumbotron padding)
     margin-top: 58px
+    @include media-breakpoint-down(xs)
+      // 122 - 32 (jumbotron padding)
+      margin-top: 90px
 
     h3
       color: $color-text-icon-badge
@@ -38,3 +41,6 @@
     font-weight: $font-weight-regular
     // 155 - 64 (jumbotron padding)
     margin-bottom: 91px
+    @include media-breakpoint-down(xs)
+      // 155 - 32 (jumbotron padding)
+      margin-bottom: 123px

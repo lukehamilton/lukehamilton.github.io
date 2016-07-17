@@ -11,6 +11,9 @@
     margin-bottom: 104px
     // 100 - 64 (jumbotron padding)
     margin-top: 36px
+    @include media-breakpoint-down(xs)
+      // 100 - 32 (jumbotron padding)
+      margin-top: 68px
     img
 
     h3
@@ -49,7 +52,11 @@
 
 
   .skill-group:last-child
-    margin-bottom: 150px
+    // 150 - 64 (jumbotron padding)
+    margin-bottom: 86px
+    @include media-breakpoint-down(xs)
+      // 150 - 32 (jumbotron padding)
+      margin-bottom: 118px
 
   // General
   .skill-group:nth-child(1)

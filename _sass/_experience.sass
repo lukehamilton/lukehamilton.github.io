@@ -1,89 +1,35 @@
 .experience
+  background-color: $color-background
   h3
     color: $color-text
     font-family: $font-family-raleway
     font-size: 26px
-    // font-weight: $font-weight-light
-    font-weight: $font-weight-medium
-    @include media-breakpoint-up(xs)
-      font-size: 17px
-      // 170 / (303/200)
-      margin-top: 112px
-      // 112 / (303/200)
-      margin-bottom: 74px
-    @include media-breakpoint-up(sm)
-      font-size: 20px
-      // 170 / (303/230)
-      margin-top: 128px
-      // 112 / (303/230)
-      margin-bottom: 84px
-    @include media-breakpoint-up(md)
-      font-size: 17px
-      // 170 / (303/200)
-      margin-top: 112px
-      // 112 / (303/200)
-      margin-bottom: 74px
-    @include media-breakpoint-up(lg)
-      font-size: 22px
-      // 170 / (303/250)
-      margin-top: 140px
-      // 112 / (303/250)
-      margin-bottom: 92px
-    @include media-breakpoint-up(xl)
-      font-size: 26px
-      margin-top: 170px
-      margin-bottom: 112px
+    font-weight: $font-weight-light
+    margin-bottom: 112px
+    // 167 - 64 (jumbotron padding)
+    margin-top: 103px
+    @include media-breakpoint-down(xs)
+      // 167 - 32 (jumbotron padding)
+      margin-top: 135px
 
   .circle-wrap:last-child
-    margin-bottom: 207px
-    @include media-breakpoint-up(xs)
-      margin-bottom: 137px
-    @include media-breakpoint-up(sm)
-      margin-bottom: 157px
-    @include media-breakpoint-up(md)
-      margin-bottom: 137px
-    @include media-breakpoint-up(lg)
-      margin-bottom: 171px
-    @include media-breakpoint-up(xl)
-      margin-bottom: 207px
+    // 208 - 64 (jumbotron padding)
+    margin-bottom: 144px
+    @include media-breakpoint-down(xs)
+      // 208 - 32 (jumbotron padding)
+      margin-bottom: 176px
 
   .circle-wrap
-    @include media-breakpoint-up(xs)
-      margin-bottom: 2.5rem
-    @include media-breakpoint-up(sm)
-      margin-bottom: 3.625rem
-    @include media-breakpoint-up(md)
-      margin-bottom: 2.5rem
-    @include media-breakpoint-up(lg)
-      margin-bottom: 3.9375rem
-    @include media-breakpoint-up(xl)
-      margin-bottom: 4.8125rem
+    margin-bottom: 73px
+    // width: 368px
 
   .circle
     border: 1px solid $color-circle
     border-radius: 50%
     margin: 0 auto
     position: relative
-    @include media-breakpoint-up(xs)
-      // 200px * 200px
-      height: 12.5rem
-      width: 12.5rem
-    @include media-breakpoint-up(sm)
-      // 230px * 230px
-      height: 14.375rem
-      width: 14.375rem
-    @include media-breakpoint-up(md)
-      // 200px * 200px
-      height: 12.5rem
-      width: 12.5rem
-    @include media-breakpoint-up(lg)
-      // 250px * 250px
-      height: 15.625rem
-      width: 15.625rem
-    @include media-breakpoint-up(xl)
-      // 303px * 303px
-      height: 18.9375rem
-      width: 18.9375rem
+    height: 303px
+    width: 303px
     &:hover
       border-width: .625rem
       box-shadow: 0px 5px 9px 3px rgba(169,169,169,0.50), 2px 2px 3px 4px rgba(235,235,235,0.50)
@@ -96,15 +42,6 @@
     left: 0
     right: 0
     bottom: 0
-    transform: scale(.66)
-    @include media-breakpoint-up(sm)
-      transform: scale(.76)
-    @include media-breakpoint-up(md)
-      transform: scale(.66)
-    @include media-breakpoint-up(lg)
-      transform: scale(.83)
-    @include media-breakpoint-up(xl)
-      transform: scale(1)
 
   p
     color: $color-text
@@ -115,21 +52,23 @@
     left: 0
     right: 0
     bottom: 0
-    @include media-breakpoint-up(xs)
-      font-size: 10px
-      top: 145px
-    @include media-breakpoint-up(sm)
-      font-size: 12px
-      top: 167px
-    @include media-breakpoint-up(md)
-      font-size: 10px
-      // font-size: 12px
-      top: 145px
-    @include media-breakpoint-up(lg)
-      font-size: 13px
-      top: 182px
-    @include media-breakpoint-up(xl)
-      top: 220px
-      font-size: 16px
+    top: 220px
+    font-size: 16px
+    // @include media-breakpoint-up(xs)
+    //   font-size: 10px
+    //   top: 145px
+    // @include media-breakpoint-up(sm)
+    //   font-size: 12px
+    //   top: 167px
+    // @include media-breakpoint-up(md)
+    //   font-size: 10px
+    //   // font-size: 12px
+    //   top: 145px
+    // @include media-breakpoint-up(lg)
+    //   font-size: 13px
+    //   top: 182px
+    // @include media-breakpoint-up(xl)
+    //   top: 220px
+    //   font-size: 16px
 
       // margin-top: 220px
