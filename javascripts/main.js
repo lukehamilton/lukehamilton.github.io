@@ -1,6 +1,8 @@
 $(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
-   $(this).parent().addClass("active");
+   $(this).addClass("active");
+  //  $(this).parent().addClass("active");
+
 });
 
 // scroll to
