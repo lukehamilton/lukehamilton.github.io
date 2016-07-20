@@ -4,7 +4,8 @@
 
   .icon-badge
     // 78 - 64 (jumbotron padding)
-    margin-top: 14px
+    // margin-top: 14px
+    margin-top: 50px
     margin-bottom: 90px
 
     h3
@@ -39,6 +40,10 @@
         transition: .15s
         height: 75px
         width: 75px
+
+        &.active
+          filter: grayscale(0)
+          -webkit-filter: grayscale(0)
 
         &:hover,
         &:active
