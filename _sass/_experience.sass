@@ -54,21 +54,90 @@
     bottom: 0
     top: 220px
     font-size: 16px
-    // @include media-breakpoint-up(xs)
-    //   font-size: 10px
-    //   top: 145px
-    // @include media-breakpoint-up(sm)
-    //   font-size: 12px
-    //   top: 167px
-    // @include media-breakpoint-up(md)
-    //   font-size: 10px
-    //   // font-size: 12px
-    //   top: 145px
-    // @include media-breakpoint-up(lg)
-    //   font-size: 13px
-    //   top: 182px
-    // @include media-breakpoint-up(xl)
-    //   top: 220px
-    //   font-size: 16px
 
-      // margin-top: 220px
+.experience-modal
+  .modal-content
+    background-color: $color-background-invert
+
+  .modal-header
+    border: none
+
+    .close
+      color: $color-text-secondary
+      opacity: 1
+      font-size: 46px
+      font-weight: $font-weight-regular
+      text-shadow: none
+      margin-top: -15px
+
+
+  .modal-body
+    color: $color-text-secondary
+    padding: 0
+    // 200 - 53
+    // margin-top: 147px
+    // margin-top: 47px
+    margin-top: 39px
+    margin-bottom: 100px
+    @include media-breakpoint-down(sm)
+      margin-bottom: 50px
+
+  .employer-meta
+    font-family: $font-family-raleway
+    @include media-breakpoint-down(sm)
+      text-align: center
+
+    p
+      margin: 0
+
+    .employer-logo
+
+    .employer-formal-name
+      font-size: 25px
+      font-weight: $font-weight-bold
+      margin-top: 50px
+      @include media-breakpoint-down(sm)
+        margin-top: 25px
+
+    .employer-modifier
+      font-size: 25px
+      font-weight: $font-weight-regular
+
+    .employer-location
+      font-size: 22px
+      font-weight: $font-weight-bold
+      margin-top: 75px
+      @include media-breakpoint-down(sm)
+        margin-top: 25px
+
+    .employer-position
+      font-size: 22px
+      font-style: italic
+      font-weight: $font-weight-regular
+
+    .employer-period
+      font-size: 22px
+      font-weight: $font-weight-regular
+      margin-top: 38px
+      @include media-breakpoint-down(sm)
+        margin-top: 25px
+
+  .employer-projects
+    font-family: $font-family-open-sans
+    @include media-breakpoint-down(sm)
+      margin-top: 50px
+
+    .project-title
+      font-size: 20px
+      font-weight: $font-weight-semi-bold
+      margin-bottom: 18px
+
+    .project-bullets
+      font-weight: $font-weight-regular
+      margin-bottom: 46px
+
+    .project-bullets:last-child
+      margin-bottom: 0
+
+    .project-bullet
+      margin-bottom: 5px
