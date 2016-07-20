@@ -18,6 +18,33 @@
     position: relative
     margin-bottom: 50px
 
+    a
+      text-decoration: none
+      color: $color-text-secondary
+
+    .circle-container
+      // @include on-circle($item-count: 8, $circle-size: 20em, $item-size: 6em)
+      margin: 5em auto 0
+      cursor: pointer
+
+
+      img
+        display: inline-block
+        max-width: 100%
+        border-radius: 50%
+        filter: grayscale(100%)
+        -webkit-filter: grayscale(100%)
+        // border: solid 5px tomato
+        // border: solid 1px $color-circle-inverse
+        transition: .15s
+        height: 75px
+        width: 75px
+
+        &:hover,
+        &:active
+          filter: grayscale(0)
+          -webkit-filter: grayscale(0)
+
     .circle
       border: 1px solid $color-circle-inverse
       border-radius: 50%

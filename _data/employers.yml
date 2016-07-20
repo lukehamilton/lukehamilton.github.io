@@ -1,18 +1,99 @@
 - name: AnyPresence
   slug: anypresence
-  period: 12/2013 - Present
+  period: 03/2015 - Present
+  formalName: AnyPresence, Inc.
+  modifier: (Remote)
+  location: Reston, VA
+  position: Senior Software Engineer
+  projects:
+    - name: Enterprise Mobile Backend as a Service
+      bullets:
+        - Responsible for converting legacy Ruby on Rails application to Ember.
+        - Implemented redesigned corporate homepage using Jekyll.
+        - Application was built using Ruby on Rails and Ember.
+    - name: Mobile App Assembly Platform
+      bullets:
+        - Responsible for maintaining existing application generators and SDKs.
+        - Implemented cross-platform SDKs for mobile and web using Node.js, Angular.js, and Ionic.
+        - Application was built using Ruby and Node.js
+    - name: API Development Application (JustAPIs.com)
+      bullets:
+        - Responsible for implementing features, fixing bugs, and writing tests.
+        - Implemented developer hub and wrote API documentation.
+        - Application was built using Ember.
 - name: Citrix
   slug: citrix
-  period: 12/2013 - Present
+  period: 12/2013 - 01/2015
+  formalName: Citrix Systems, Inc.
+  modifier: Cloud.com
+  location: Fort Lauderdale, FL
+  position: Senior Software Engineer
+  projects:
+    - name: Telemedicine Application
+      bullets:
+        - Responsible for creating animated dashboard displaying blood pressure, heart rate, and temperature metrics and directly interfacing with Bluetooth connected wearable devices.
+        - Implemented WebRTC solution used for real time video and audio streams.
+        - Application was built using Node.js and Angular.js. Firebase was used for data storage and real time communication.
+    - name: Customer Support Application
+      bullets:
+        - Responsible for creating real time visual annotations with HTML5 Canvas and rendering near video quality screen captures.
+        - Implemented WebRTC solution used for real time video and audio streams.
+        - Application was built using Node.js and Angular.js. Firebase was used for data storage and real time communication.
+    - name: Platform Dashboard
+      bullets:
+        - Responsible for creating user interfaces for key-value data store similar to Parse and user collaboration between applications.
+        - Implemented custom skinned Zendesk integration enabling customer support forums, issue ticketing, and knowledge wiki.
+        - Application was built using Ruby on Rails and Backbone.js.
+    - name: File Storage Application
+      bullets:
+        - Responsible for creating web based file preview capability and implementing Dropbox like user interface.collaboration between applications.
+        - Application was built using Node.js and Angular.js.
 - name: WishClouds
   slug: wishclouds
-  period: 12/2013 - Present
+  period: 04/2013 - 12/2013
+  formalName: WishClouds, LLC.
+  location: Boca Raton, FL
+  position: Senior Software Engineer
+  projects:
+    - name: Social Shopping Application
+      bullets:
+        - Responsible for application architecture and development, implementation of user interfaces, and interfacing with external APIs.
+        - Application was built using Ruby on Rails and Backbone.js.
 - name: Squarespace
   slug: squarespace
-  period: 12/2013 - Present
+  period: 01/2012 - 10/2012
+  formalName: Squarespace, Inc.
+  location: New York, NY
+  position: Data Visualization Engineer
+  projects:
+    - name: Analytics Dashboard
+      bullets:
+        - Responsible for design and implementation of application architecture and user interfaces.
+        - Responsible for design and implementation of data visualizations using D3.js, Raphael.js, and HighCharts.js
+        - Application was built using Backbone.js.
 - name: EverFi
   slug: everfi
-  period: 12/2013 - Present
+  period: 03/2011 - 06/2011
+  formalName: EverFi, Inc.
+  modifier: (Contract)
+  location: Washington D.C.
+  position: Software Engineer
+  projects:
+    - name: Financial Budgeting Application
+      bullets:
+        - Responsible for design and implementation of application architecture, backend API, and user interfaces.
+        - Application was built using Sinatra, Backbone.js, and Raphael.js.
+    - name: Financial Literacy E-Learning Application
+      bullets:
+        - Responsible for rewriting web application in Ruby on Rails.
 - name: Abraxas
   slug: abraxas
-  period: 12/2013 - Present
+  period: 06/2009 - 12/2010
+  formalName: Abraxas Corp.
+  location: Herndon, VA
+  position: Software Engineer / UI Designer
+  projects:
+    - name: Social Network Analysis Application
+      bullets:
+        - Responsible for design and implementation of application architecture, backend API, database schema, and user interfaces.
+        - Application was built using Ruby on Rails and Mathematica.

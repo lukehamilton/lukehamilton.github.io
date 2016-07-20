@@ -1,9 +1,16 @@
 .header
-  margin-top: 41px
+  padding-top: 20px
+  padding-bottom: 20px
+  -webkit-transition: all 0.6s ease-out
+  -moz-transition: all 0.6s ease-out
+  -o-transition: all 0.6s ease-out
+  -ms-transition: all 0.6s ease-out
+  transition: all 0.6s ease-out
 
 
   .navbar-nav .nav-item
-    margin: 0 21px 0 21px
+    // margin: 0 21px 0 21px
+    margin: 0 8px 0 8px
 
   .nav-link
     color: $color-text
@@ -22,3 +29,18 @@
         color: $color-nav-active
         border: 1px solid $color-nav-active
         padding: 5px 11px 5px 11px
+
+  //Add the below transitions to allow a smooth color change similar to lyft
+  // .navbar
+  //   -webkit-transition: all 0.6s ease-out
+  //   -moz-transition: all 0.6s ease-out
+  //   -o-transition: all 0.6s ease-out
+  //   -ms-transition: all 0.6s ease-out
+  //   transition: all 0.6s ease-out
+
+.header.scrolled
+  //IE
+  // background: rgb(68, 68, 68)
+  //NON-IE
+  background: rgba(255, 255, 255, 1)
+  box-shadow: 0 3px 3px rgba(0,0,0,0.3)

@@ -1,0 +1,24 @@
+- name: AnyPresence MBaaS
+  slug: apmbaas
+  description: An Enterprise Backend as a Service for mobile app development
+  url: http://www.anypresence.com/solutions/mbaas/
+- name: JustAPIs Web Application
+  slug: justapis
+  description: Quickly define and expose API endpoints in the cloud
+  url: http://www.justapis.com/
+- name: JustAPIs Developer Hub
+  slug: dev
+  description: Guides and documentation to help you start working with JustAPIs
+  url: http://devhub.justapis.com/
+- name: Citrix GotoAssist Concierge
+  slug: concierge
+  description: Instant in-app help from a live customer service expert
+  url: https://www.gotoassist.com/remote-support/anytime/concierge
+- name: WishClouds Web Application
+  slug: wc
+  description: A social shopping platform leveraging purchase intent data
+  url: http://www.wishclouds.com/
+- name: Tartan Network Analysis
+  slug: tartan
+  description: Analyze influence in social networks to discover hidden relationships
+  url: http://www.ntrepidcorp.com/tartan/

@@ -12,29 +12,19 @@
 
     <div class='row'>
 
-      <div class='project col-md-10 col-md-offset-2 col-lg-5 col-lg-offset-1'>
-        <div class='circle'></div>
-        <h4 class='project-title'>EXAMPLE TITLE OF PROJECT</h4>
-        <p class='project-description'>Develop frontpage & fairly short text will go here.</p>
-      </div>
-
-      <div class='project col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-0'>
-        <div class='circle'></div>
-        <h4 class='project-title'>EXAMPLE TITLE OF PROJECT</h4>
-        <p class='project-description'>Develop frontpage & fairly short text will go here.</p>
-      </div>
-
-      <div class='project col-md-10 col-md-offset-2 col-lg-5 col-lg-offset-1'>
-        <div class='circle'></div>
-        <h4 class='project-title'>EXAMPLE TITLE OF PROJECT</h4>
-        <p class='project-description'>Develop frontpage & fairly short text will go here.</p>
-      </div>
-
-      <div class='project col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-0'>
-        <div class='circle'></div>
-        <h4 class='project-title'>EXAMPLE TITLE OF PROJECT</h4>
-        <p class='project-description'>Develop frontpage & fairly short text will go here.</p>
-      </div>
+      {% for project in site.data.projects %}
+        <div class='project col-md-10 col-md-offset-2 col-lg-5 col-lg-offset-1'>
+          <a class="circle-container" href="{{ project.url }}">
+            <!-- <div class='circle'> -->
+              <!-- <img src="/images/logos/logo-{{ project.slug }}.png" data-at2x="/images/logos/logo-{{ employer.slug }}@2x.png"/> -->
+            <!-- </div> -->
+            <img src="/images/logos/logo-{{ project.slug }}.png" data-at2x="/images/logos/logo-{{ project.slug }}@2x.png"/>
+            <!-- {{ project.slug }} -->
+            <h4 class='project-title'>{{ project.name }}</h4>
+            <p class='project-description'>{{ project.description }}</p>
+          </a>
+        </div>
+      {% endfor %}
 
     </div>
 
