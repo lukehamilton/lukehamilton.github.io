@@ -5,6 +5,24 @@ $(".nav a").on("click", function(){
    $(this).addClass("active");
 });
 
+$('.navbar-toggler').on('click', function()  {
+  if ($('.header').hasClass('scrolled')) {
+    $('.header').removeClass('scrolled')
+  } else {
+    $('.header').addClass('scrolled')
+  }
+});
+
+// click PDF button
+$('.icobutton').on('click', function(e)  {
+  e.preventDefault();
+  href = $(this).attr('href');
+  setTimeout(function(href){
+    var win = window.open(href, '_blank');
+    // win.focus();
+  }, 500, href);
+});
+
 // open employer modal
 $(".circle").on("click", function(){
   slug = $(this).data('slug');
@@ -42,7 +60,9 @@ function checkScroll(){
     var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
     if($(window).scrollTop() > startY){
-        $('.navbar').addClass("scrolled");
+        if ($(window).width() > 768)  {
+            $('.navbar').addClass("scrolled");
+        }
     }else{
         $('.navbar').removeClass("scrolled");
     }
@@ -113,7 +133,6 @@ if($('.navbar').length > 0){
 
 		var self = this;
 		this.el.addEventListener(clickHandler, function() {
-      console.log('clicked');
       self.timeline.start();
 		});
 	}
@@ -138,12 +157,15 @@ if($('.navbar').length > 0){
 			tweens : [
 				// burst animation
 				new mojs.Burst({
-					parent: el6,
+					parent: el6span,
 					duration: 1500,
+          // duration: 5000,
 					shape : 'circle',
 					fill : 'white',
-          x: '39%',
-          y: '65.5%',
+          // x: '39%',
+          x: '-165%',
+          // y: '65.5%',
+          y: '50%',
 					childOptions: {
 						radius: {12:0},
 						type: 'line',
@@ -157,15 +179,18 @@ if($('.navbar').length > 0){
 				}),
 				// ring animation
 				new mojs.Transit({
-					parent: el6,
+					parent: el6span,
 					duration: 800,
+          // duration: 8000,
 					type: 'circle',
 					radius: {10: 60},
 					fill: 'transparent',
 					stroke: '#F81851',
 					strokeWidth: {30:0},
-					x: '42%',
-          y: '65.5%',
+					// x: '42%',
+          x: '-107%',
+          // y: '65.5%',
+          y: '50%',
 					isRunLess: true,
 					easing: mojs.easing.bezier(0.1, 1, 0.3, 1)
 				}),
