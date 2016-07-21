@@ -1,4 +1,19 @@
 
+$( window ).resize(function() {
+  if ($(window).width() < 768 && $('.navbar').is(":hidden"))  {
+    $('.navbar').removeClass("scrolled");
+  }
+  if ($(window).width() < 320)  {
+    $('.header').css('height', '304')
+  } else if ($(window).width() < 400)  {
+    $('.header').css('height', '200')
+  } else if ($(window).width() < 768) {
+    $('.header').css('height', '168')
+  } else {
+    $('.header').css('height', '96')
+  }
+});
+
 // change nav active
 $(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
@@ -6,6 +21,15 @@ $(".nav a").on("click", function(){
 });
 
 $('.navbar-toggler').on('click', function()  {
+  if ($(window).width() < 320)  {
+    $('.header').css('height', '304')
+  } else if ($(window).width() < 400)  {
+    $('.header').css('height', '200')
+  } else if ($(window).width() < 768) {
+    $('.header').css('height', '168')
+  } else {
+    $('.header').css('height', '96')
+  }
   if ($('.header').hasClass('scrolled')) {
     $('.header').removeClass('scrolled')
   } else {
